@@ -11,9 +11,9 @@ class GpsSpoofingDetection:
         self.lat_threshold = 0.1  # degrees
         self.lon_threshold = 0.1  # degrees
 
-        self.sog_threshold_high = 150  # Speed over ground threshold for high speed (e.g., 40 knots)
-        self.sog_threshold_low = 0.5  # Speed over ground threshold for low speed (e.g., 0.5 knots)
-        self.distance_threshold_high = 10  # High distance threshold (e.g., 500 nautical miles)
+        self.sog_threshold_high = 200 
+        self.sog_threshold_low = 0.5
+        self.distance_threshold_high = 10 # kilometers
 
         self.max_distance_between_vessels = 0.5  # kilometers
         self.chunk_size = 20000
